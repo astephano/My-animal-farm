@@ -1,0 +1,44 @@
+import java.awt.Color; //needed for color to work
+public class Tiger extends Turtle
+{ 
+  /**
+   * Constructor that takes a model display and adds
+   * a turtle in the middle of it
+   * @param display the model display
+   */
+  public Tiger(World wref)
+  {
+    super(wref);
+    this. forward(65);
+    this. turn(90);
+    this. forward(65);
+    this. turn(90);
+    this. forward(65);
+    this. turn(90);
+    this. forward(65);
+    this. turn(275);
+    this. forward(45);
+    this. setWidth(20);
+    this.setName("Tigger");
+    Color shellColor = new Color(3, 180, 200);
+    this.setShellColor(shellColor);
+    Color bodyColor = new Color(0, 0, 0);
+    this.setBodyColor(bodyColor);
+  }
+  
+  /**
+   * Constructor that takes the x and y position and the
+   * model displayer
+   * @param x the x pos
+   * @param y the y pos
+   * @param display the model display
+   */
+  public Tiger(int x, int y, World wref)
+  {
+    super(x, y, wref);
+    Color shellColor = new Color(3, 180, 200);
+    this.setShellColor(shellColor);
+    Color bodyColor = new Color(0, 0, 0);
+    this.setBodyColor(bodyColor);
+  }
+}
